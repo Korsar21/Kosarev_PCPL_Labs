@@ -4,7 +4,7 @@ from game import Game
 from message import *
 from start_message import *
 
-bot = telebot.TeleBot('6081763073:AAFqpS-UjiUM3yxRs66OSKMCkcUBJ4zUVfI')
+bot = telebot.TeleBot('token')
 
 sessions: dict[int, Game] = {}
 
