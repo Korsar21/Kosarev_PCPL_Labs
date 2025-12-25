@@ -80,7 +80,7 @@ def handle_button(message: Message):
             keyboard = ReplyKeyboardMarkup(row_width=1)
             button_ready_quest = KeyboardButton(READY_QUEST)
             keyboard.add(button_ready_quest)
-            bot.send_message(message.chat.id, info_quest, reply_markup=keyboard)
+            bot.send_message(message.chat.id, info_quest, reply_markup=keyboard, parse_mode='HTML')
             return
 
     if message.text == READY_QUEST:

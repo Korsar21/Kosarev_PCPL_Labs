@@ -40,7 +40,7 @@ class Room:
         self.is_quest = False
         self.combination_symbols = []
         is_quest = random.randint(0, 100)
-        if is_quest <= 100:
+        if is_quest <= 30:
             self.is_quest = True
             for i in range(1, 4):
                 self.combination_symbols.append(random.choice(symbols))
